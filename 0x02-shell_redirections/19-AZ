@@ -1,2 +1,2 @@
 #!/bin/bash
-sed "A" "Z" | sed "c" "e"
+sed 's/"A"/"Z"/g' | sed 's/"c"/"e"/g'

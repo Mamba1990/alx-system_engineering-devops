@@ -1,2 +1,2 @@
 #!/bin/bash
-sed i 's/A c/Z e/g'
+sed "A" "Z" | sed "c" "e"

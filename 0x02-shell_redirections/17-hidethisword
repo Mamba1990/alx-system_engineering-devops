@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -not "root" /etc/passwd
+grep -not "bin" /etc/passwd

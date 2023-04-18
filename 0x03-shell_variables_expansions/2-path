@@ -1,2 +1,2 @@
 #!/bin/bash
-PATH="/action/*"
+PATH="home/julien/{bin,.local/bin} usr/local/{sbin,bin,games} usr/{sbin,bin,games} /sbin /bin snap/bin /action"

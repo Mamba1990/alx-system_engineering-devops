@@ -1,2 +1,2 @@
 #!/bin/bash
-LOVE ="echo $BREATH"
+echo $((BREATH:$LOVE))

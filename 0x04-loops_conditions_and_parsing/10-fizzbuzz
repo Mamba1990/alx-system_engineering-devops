@@ -3,7 +3,7 @@
 
 for number in {1..100}
 do
-  if (( number % 3 == 0 && num % 5 == 0 ))
+  if (( number % 3 == 0 && number % 5 == 0 ))
   then
     echo "FizzBuzz"
   elif (( number % 3 == 0 ))

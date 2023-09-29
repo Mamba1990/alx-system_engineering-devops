@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# second optional task file 2
+
+while true
+do
+  echo "I am alive!" >> /tmp/my_process
+  sleep 2
+done

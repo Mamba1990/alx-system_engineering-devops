@@ -1,6 +1,4 @@
-#- ssh config file
-SendEnv LANG LC_*
-HashKnownHosts yes
-GSSAPIAuthentication yes
-PasswordAuthentication no
-IdentityFile ~/.ssh/school
+# ssh config file
+Host *
+      PasswordAuthentication no
+      IdentityFile ~/.ssh/school

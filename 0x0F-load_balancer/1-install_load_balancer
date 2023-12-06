@@ -7,7 +7,7 @@ add-apt-repository -y ppa:vbernat/haproxy-2.4
 apt-get -y install haproxy
 
 # the load balancer's configuration
-DOMAIN_NAME='munyasi.tech'
+DOMAIN_NAME='myalxcode.tech'
 INIT_FILE='/etc/default/haproxy'
 CONFIG_FILE='/etc/haproxy/haproxy.cfg'
 HAPROXY_LB_CONFIG=\

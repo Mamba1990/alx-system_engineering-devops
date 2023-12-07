@@ -42,12 +42,12 @@ defaults
 #--alxmmycode.tech-params-begin--
 frontend alxmycode.tech-frontend
         bind *:80
-        bind *:443 ssl crt /etc/haproxy/certs/munyasi.tech.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.myalxcode.tech/fullchain.pem
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         http-request set-header X-Forwarded-Proto http
         # ADDITIONS
         use_backend letsencrypt-backend if letsencrypt-acl
-        default_backend munyasi.tech-backend
+        default_backend myalxcode.tech-backend
 
 backend alxmycode.tech-backend
         balance roundrobin

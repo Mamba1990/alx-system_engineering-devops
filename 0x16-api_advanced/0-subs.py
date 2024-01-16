@@ -6,8 +6,8 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """ Dispalys the number of subscribers for a given subreddit. """
-    uAgent = 'Chrome/120.0.6099.217 '
+    """ Defines the number of subscribers for a given subreddit. """
+    uAgent = 'Mozilla/5.0'
 
     headers = {
         'User-Agent': uAgent

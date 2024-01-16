@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" simple comment """
+""" A module """
 from operator import itemgetter
 import requests
 
@@ -21,13 +21,13 @@ def count_words(subreddit, word_list, hot_list=[], init=0, after="null"):
             word_list_low = sorted(word_list)
             rt = []
             for word in word_list_low:
-                num = len(
+                _num = len(
                     list(
                         filter(
                             lambda hot_w: hot_w.lower() == word.lower(),
                             hot_words)))
-                if num != 0:
-                    rt.append([word, num])
+                if _num != 0:
+                    rt.append([word, _num])
             if len(rt) != 0:
                 i = 0
                 while i < len(rt) - 1:

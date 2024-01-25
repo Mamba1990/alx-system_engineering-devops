@@ -1,12 +1,12 @@
-# Fixng nginx error 24: too many open files
+# Fix problem of high amount of requests
 
-exec {'fix'
-    provider => shell,
-    command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
-    before   => Exec['restart nginx']
+exec {'replace':
+  provider => shell,
+  command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
+  before   => Exec['restart'],
 }
 
-exec {'restart nginx':
-    provider => shell,
-    command  => 'sudo service nginx restart'
+exec {'restart':
+  provider => shell,
+  command  => 'sudo service nginx restart',
 }
